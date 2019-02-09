@@ -8,7 +8,8 @@ class Song < ActiveRecord::Base
 
   def artist_name=(name)
   #  artist? self.artist.display_artist.name:nil
-
+    song = Song.create(title: title)
+    song.artist_name = artist_name
     
   end
 end
